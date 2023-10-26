@@ -17,7 +17,7 @@ e = lowernames.count("E")
 
 true = t + r + u + e  # add all the letters together
 
-l = lowernames.count("L") 
+l = lowernames.count("L")
 o = lowernames.count("O")
 v = lowernames.count("V")
 e = lowernames.count("E")
