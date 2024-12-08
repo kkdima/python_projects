@@ -71,4 +71,5 @@ while game_is_on:
     missing_states_df.to_csv("day_25/us_game/states_to_learn.csv", index=False)
 
 if correct_guesses < 50:
+    print(missing_states_df)
     print(f"Game Over! Final Score: {correct_guesses}/50")
