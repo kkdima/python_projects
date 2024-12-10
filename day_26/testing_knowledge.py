@@ -20,7 +20,29 @@
 # print(my_list)
 
 
-names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
-short_names = [name.upper() for name in names if len(name) > 5]
-print(short_names)
+# names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
+# short_names = [name.upper() for name in names if len(name) > 5]
+# print(short_names)
+
+with open("day_26/file1.txt") as file1:
+    lists1 = set(int(num) for num in file1.readlines())
+
+with open("day_26/file2.txt") as file2:
+    list2 = set(int(num) for num in file2.readlines())
+
+result = [int(num) for num in lists1 if num in list2]
+
+print(result)
+
+# Read files and create sets of integers
+with open("file1.txt") as file1:
+    list1 = [num for num in file1.readlines()]
+
+with open("file2.txt") as file2:
+    list2 = [num for num in file2.readlines()]
+
+# Find common numbers and sort them
+result = [int(num) for num in list1 if num in list2]
+print(result)
+
 
